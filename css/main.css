@@ -913,7 +913,7 @@ input[type=radio]:focus {
   margin: 0;
 }
 .ciation-list li{
-
+  word-break: break-all;
   margin: 10px;
 }
 #idea2{
