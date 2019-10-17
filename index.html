@@ -1,788 +1,119 @@
+<!--CITATION -->
+<!--Check out cart design lay out inspiration: https://www.zara.com/ca/en/rustic-quilted-jacket-p06929224.html?v1=25955489&v2=1281521-->
+<!--css postion: www.w3schools.com/css/css_list.asp. -->
+<!--css checked : css-tricks.com/almanac/selectors/c/checked/-->
+<!--css Animation :https://www.w3schools.com/cssref/css3_pr_animation.asp -->
+<!--Secodary Font (Inconsolata) :https://fonts.google.com/?selection.family=Inconsolata|Mansalva&query=Inconsolata -->
+<!--Major font (Mansalva) :https://fonts.google.com/specimen/Mansalva   -->
+<!-- Some styling guide inspiration from PO1 Example, provided by IAT339 Instructur Helmine -->
+<!--https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_td_colspan-->
+<!--https://www.w3schools.com/tags/tag_thead.asp-->
+<!--https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_tbody-->
+<!--https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_table_test-->
+<!--https://www.w3schools.com/js/js_const.asp-->
+<!--https://webdesign.tutsplus.com/tutorials/a-quick-full-screen-background-hover-effect--cms-33656-->
+<!--https://www.w3schools.com/jquery/event_mouseenter.asp-->
+<!--https://codepen.io/Jan-Timon/pen/amkLWL-->
+
+<!-- cursor tutorial https://codepen.io/designcourse/pen/GzJKOE-->
+<!-- cursor tutorial https://www.youtube.com/watch?v=rfpRZ2t_BrQ   -->
+
+
 <!DOCTYPE html>
-<html lang = en><head>
+<html lang="en">
+<head>
   <meta charset="utf-8">
-  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Neri & HU</title>
-  
-  <link href="css/main.css" rel="stylesheet">
-  <link href="css/nav.css" rel="stylesheet">
-  <link href="css/grid.css" rel="stylesheet">
-
+  <title>Home</title>
   <script src="js/jquery.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Raleway:200&display=swap" rel="stylesheet">
 
 
-  <body  style="">
-
-    <header>
-     <div class="header">
-       <div class="nav-container">
-        <a class="me" href="index.html">
-          <img src="img/logo.png" alt="logo">
-        </a>
-        <div class="right-nav">
-          <nav class="top_nav">
-            <ul class="top_nav_ul">
-              <li><a> BRANDS </a></li>
-              <li><a> WORK </a></li>
-              <li><a> PRODUCTS </a></li>
-              <li><a> ABOUT </a></li>
-            </ul>
-          </nav>
-
-          <div class="container" onclick="myFunction(this); myFunction1(); ">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-          </div>
-
-          <div class="header-icons__item hidden-xs" style="display: none;">Ru</div>
-        </div>
-      </div>
-    </div>
-  </div>
+<link rel="stylesheet" type="text/css" href="css/normal.css">
 
 
-</header>
+<link rel="stylesheet" type="text/css" href="css/home.css">
 
-<div id="side-nav">
-  <nav class="side-nav-class">  
-    <ul class="side-ul">  
-      <li> <a class="side-nav-a1" onclick="IntEle();">Interactive Elements | 交互元素</a></li> 
-      <li> <a class="side-nav-a2" onclick="TextEle();">Text Elements  | 文本元素</a></li> 
-      <li> <a class="side-nav-a3" onclick="ComEle();">Combined Elements  | 綜合元素</a></li> 
-      <li> <a class="side-nav-a6" onclick="ArtDir();">Art direction  | 極簡主義</a></li> 
-      <li> <a class="easteregg" onclick="setTimeout(balls, 1)"> EASTER EGG | 彩蛋</a></li>
-    </ul>    
-    
-
-  </nav>
-</div>
+<link rel="stylesheet" type="text/css" href="css/bottom.css">
+<link rel="stylesheet" type="text/css" href="css/cursor.css">
+<link rel="stylesheet" type="text/css" href="css/grid.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway:200&display=swap" rel="stylesheet">
 
 
 
-<!-- INTERACTIVE ELEMENTS SECTION // -->
-<section id="interactive_elements">
-  <h1>Interactive Elements | 交互元素</h1>
+
+<div class="bg"></div>
 
 
-  <section class="element">
-    <h3>In-text link</h3>
-
-    <a class="intext-link">IN-TEXT LINK</a>
-  </section>
+<body data-gr-c-s-loaded="true" style="">
 
 
-  <!-- Default Button styling section -->
-  <section class="element">
-    <div class="element">
+<!--cursor display-->
+  <div class="cursor"></div>
 
-      <h3>Navigation Link</h3>
-
-      <div class="nav-container3">
-        <nav class="top_nav3">
-          <ul class="top_nav_ul3">
-            <li><a>BRANDS</a></li>
-            <li><a> WORK </a></li>
-            <li><a> PRODUCTS </a></li>
-            <li><a> ABOUT </a></li>
-
-          </ul>
-        </nav>
-      </div>
-    </div>
-
-    <div class="element">
-      <h4>CSS selector:</h4>
-      <p>.button-nav</p>
-    </div>
-
-    <h4>Sample code:</h4>
-    <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
-
-    <h4>Rendered element:</h4>
-    <button class="button-nav" href="#">Default Button</button>
-
-  </section>
-
-
-  <!--reset button -->
-  <section class="element">
-    <h3>Submit/Reset Buttons</h3>
-    <button class="button-nav" href="#">SUBMIT</button>
-    <button class="button-nav" href="#">ADD TO BAG</button>
-  </section>
-
-
-  <!--text input -->
-  <section class="element">
-    <label for="input-label">
-    <h3>Text Input Field with Label</h3></label>
-    <div class="field--three">
-      <div class="field__input-wrapper field__input-wrapper--select">
-        <input id="input-label" placeholder="Placeholder" class="field__input">
-      </div>
-    </div>
-  </section>
-
-
-  <!--Radio button -->
-  <section class="element">
-    <h3>Radio Button with Label</h3>
-    <ul class="radio">
-      <li><label for="muhRadio1"><input type="radio" name="muhRadio1" id="muhRadio1" value=""> VISA</label></li>
-      <li><label for="muhRadio2"><input type="radio" name="muhRadio2" id="muhRadio2" value=""> MASTERCARD</label></li>
-
-    </ul>
-  </section>
-
-
-  <!--image as a link -->
-  <section class="element">
-    <h3>Image as a Link</h3>
-    <span>
-      <a href="http://www.neriandhu.com/zn" class="product-card" id="card1">
-
-        <span style="display:none">Days old: 21</span>
-
-
-        <div class="product-image-wrapper">
-          <img src="img/pro6.jpg" alt="" class="product-card-image" id="product1">
-          <img src="img/pro5.jpg" alt="" class="product-card-image2" id="product1-2">
-        </div>
-
-        <div class="product-details-wrapper">
-          <p id="brd5" class="product-card-brand">nh1217 衍生系列 2019</p>
-          <p id="sep5" class="product-card-name">Family</p>
-          <p class="product-price">$1235.00 CAD</p>
-        </div>
-      </a>
-
-    </span>
-  </section>
-</section>
-
-<!-- // INTERACTIVE ELEMENTS SECTION -->
-
-<!-- TEXT ELEMENTS SECTION // -->
-<section id="text_elements">
-  <h1>Text Elements  | 文字元素</h1>
-
-
-  <section class="element">
-
-    <h3>Neri & Hu</h3>
-    <h2>Neri & Hu</h2>
-    <h3>Neri & Hu</h3>
-    <h4>Neri & Hu</h4>
-    <h5>Neri & Hu</h5>
-
-  </section>
-
-  <section class="element">
-    <h3>Paragraphs</h3>
-    <p class="p1">Founded in 2004 by partners Lyndon Neri and Rossana Hu, Neri&Hu Design and Research Office is an inter-disciplinary architectural design practice based in Shanghai, China with an additional office in London, UK. Neri&Hu works internationally providing architecture, interior, master planning, graphic, and product design services. Currently working on projects in many countries, Neri&Hu is composed of multi-cultural staff who speak over 30 different languages. The diversity of the team reinforces a core vision for the practice: to respond to a global worldview incorporating overlapping design disciplines for a new paradigm in architecture.</p>
-  </section>
-
-  <section class="element">
-    <h3>Numbered Lists</h3>
-    <ol class="unmber-list">
-      <li>work</li>
-      <li>studio</li>
-      <li>about</li>
-    </ol>
-  </section>
-
-</section>
-<!-- // TEXT ELEMENTS SECTION -->
-
-
-
-<!-- COMBINED ELEMENTS SECTION // -->
-<section id="combined_elements">
-  <h1>Combined Elements  | 綜合元素</h1>
-
-  <section class="element">
-    <h3>Main Navigation</h3>
-    <div class="nav-container2">
-      <a class="me2" href="index.html">
+  <header>
+    <div class="header">
+     <div class="nav-container">
+      <a class="me" href="index.html">
         <img src="img/logo.png" alt="logo">
       </a>
-      <nav class="top_nav2">
-        <ul class="top_nav_ul2">
-          <li><a> BRANDS </a></li>
-          <li><a> CATAGORIES </a></li>
-          <li><a> NEW ARRIVALS </a></li>
-          <li><a> LOOKBOOK </a></li>
-        </ul>
-      </nav>
-    </div>
-  </section>
-
-  <section class="element">
-    <h3>Product/Service Listing</h3>
-
-    <span>
-      <a href="#" class="product-card" id="card2">
+      <div class="right-nav">
+        <nav class="top_nav">
+          <ul class="top_nav_ul">
+            <li><a href="about.html"> about us </a></li>
+            <li><a href="products.html"> products </a></li>
+            <li><a href="#"> show case </a></li>
 
 
-        <span class="tag tag-new">New</span>
+          </ul>
 
 
-        <!--img 1 with hover eefect -->
-        <div class="product-image-wrapper">
-          <img src="img/pro4.jpg" alt="" class="product-card-image" id="product2">
-          <img src="img/pro3.jpg" alt="" class="product-card-image2" id="product2-2">
+
+        </nav>
+
+        <div class="container" onclick="myFunction(this); myFunction1(); ">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
         </div>
 
 
-        <!--img 1 detail text -->
-        <div class="product-details-wrapper">
-          <p id="brd3" class="product-card-brand">Parachilna - Denglong</p>
-          <p id="sep3" class="product-card-name">Family</p>
-          <p class="product-price">$645.00 CAD</p>
-        </div>
-      </a>
+        <div class="header__menu--extra">
 
-    </span>
+          <div class="header__menu__item search">
 
-
-    <span>
-      <a href="#" class="product-card" id="card3">
-
-        <!--img 2 with hover eefect -->
-        <div class="product-image-wrapper">
-          <img src="img/pro4.jpg" alt="CAV EMPT Design World Zip Jacket Black, Jackets" class="product-card-image" id="product3">
-          <img src="img/pro3.jpg" alt="CAV EMPT Design World Zip Jacket Black, Jackets" class="product-card-image2" id="product3-2">
-        </div>
-
-
-        <!--img 2 detail text -->
-        <div class="product-details-wrapper">
-          <p id="brd4" class="product-card-brand">LEMA - Bai Lu</p>
-          <p id="sep4" class="product-card-name">Family</p>
-          <p class="product-price">$505.00 CAD</p>
-        </div>
-      </a>
-
-    </span>
-  </section>
-
-
-
-  <!--PAYMENT FORM -->
-
-  <section class="element">
-    <h3>Payment Form</h3>
-
-    <div class="section--shipping-address">
-
-
-      <!--personal info -->
-      <div class="personal-info"> 
-        <h1>Personal info:</h1>
-      </div>
-
-      <div class="section__content">
-        <div class="section__content">
-          <div class="fieldset" >
-
-            <div class="field--half field field--required" >
-
-             <div class="field__input-wrapper">
-              <input placeholder="First name"  class="field__input"  size="30" type="text" id="checkout_shipping_address_first_name">
-            </div>
-          </div>
-
-          <div class="field--half field field--required">
-
-            <div class="field__input-wrapper">
-              <input placeholder="Last name" class="field__input" size="30" type="text"  id="checkout_shipping_address_last_name">
-            </div>
-          </div>
-
-          <div data-address-field="company" class="field field--optional">
-           <div class="field__input-wrapper">
-            <input placeholder="Company (optional)" class="field__input" size="30" type="text" id="checkout_shipping_address_company">
           </div>
         </div>
 
-        <div class="field--two-thirds field field--required">
-         <div class="field__input-wrapper">
-          <input placeholder="Address"  class="field__input" size="30" type="text" id="checkout_shipping_address_address1">
-        </div>
-      </div>
-
-      <div class="field--third field field--optional">
-       <div class="field__input-wrapper">
-        <input placeholder="Apartment, suite, etc. (optional)" class="field__input" size="30" type="text" id="checkout_shipping_address_address2">
       </div>
     </div>
 
-
-    <div data-address-field="city" data-google-places="true" class="field field--required">
-     <div class="field__input-wrapper">
-      <input placeholder="City" class="field__input"size="30" type="text" id="checkout_shipping_address_city">
-    </div>
-  </div>
-
-
-  <div class="field--three-eights field field--required">
-    <label class="field__label" >Country</label>
-    <div class="field__input-wrapper field__input-wrapper--select">
-      <select size="1" class="field__input field__input--select" id="checkout_shipping_address_country">
-        <option data-code="US" value="United States">United States</option>
-        <option data-code="CA" selected="selected" value="Canada">Canada</option>
-        <option disabled="disabled" value="---">---</option>
-        <option data-code="AF" value="Afghanistan">Afghanistan</option>
-        <option data-code="AX" value="Aland Islands">Åland Islands</option>
-        <option data-code="AL" value="Albania">Albania</option>
-        <option data-code="DZ" value="Algeria">Algeria</option>
-        <option data-code="AD" value="Andorra">Andorra</option>
-        <option data-code="AO" value="Angola">Angola</option>
-        <option data-code="AI" value="Anguilla">Anguilla</option>
-        <option data-code="AG" value="Antigua And Barbuda">Antigua &amp; Barbuda</option>
-        <option data-code="AR" value="Argentina">Argentina</option>
-        <option data-code="AM" value="Armenia">Armenia</option>
-        <option data-code="AW" value="Aruba">Aruba</option>
-        <option data-code="AU" value="Australia">Australia</option>
-        <option data-code="AT" value="Austria">Austria</option>
-        <option data-code="AZ" value="Azerbaijan">Azerbaijan</option>
-        <option data-code="BS" value="Bahamas">Bahamas</option>
-        <option data-code="BH" value="Bahrain">Bahrain</option>
-        <option data-code="BD" value="Bangladesh">Bangladesh</option>
-        <option data-code="BB" value="Barbados">Barbados</option>
-        <option data-code="BY" value="Belarus">Belarus</option>
-        <option data-code="BE" value="Belgium">Belgium</option>
-        <option data-code="BZ" value="Belize">Belize</option>
-        <option data-code="BJ" value="Benin">Benin</option>
-        <option data-code="BM" value="Bermuda">Bermuda</option>
-        <option data-code="BT" value="Bhutan">Bhutan</option>
-        <option data-code="BO" value="Bolivia">Bolivia</option>
-        <option data-code="BA" value="Bosnia And Herzegovina">Bosnia &amp; Herzegovina</option>
-        <option data-code="BW" value="Botswana">Botswana</option>
-        <option data-code="BV" value="Bouvet Island">Bouvet Island</option>
-        <option data-code="BR" value="Brazil">Brazil</option>
-        <option data-code="IO" value="British Indian Ocean Territory">British Indian Ocean Territory</option>
-        <option data-code="VG" value="Virgin Islands, British">British Virgin Islands</option>
-        <option data-code="BN" value="Brunei">Brunei</option>
-        <option data-code="BG" value="Bulgaria">Bulgaria</option>
-        <option data-code="BF" value="Burkina Faso">Burkina Faso</option>
-        <option data-code="BI" value="Burundi">Burundi</option>
-        <option data-code="KH" value="Cambodia">Cambodia</option>
-        <option data-code="CM" value="Republic of Cameroon">Cameroon</option>
-        <option data-code="CA" value="Canada">Canada</option>
-        <option data-code="CV" value="Cape Verde">Cape Verde</option>
-        <option data-code="BQ" value="Bonaire, Sint Eustatius and Saba">Caribbean Netherlands</option>
-        <option data-code="KY" value="Cayman Islands">Cayman Islands</option>
-        <option data-code="CF" value="Central African Republic">Central African Republic</option>
-        <option data-code="TD" value="Chad">Chad</option>
-        <option data-code="CL" value="Chile">Chile</option>
-        <option data-code="CN" value="China">China</option>
-        <option data-code="CX" value="Christmas Island">Christmas Island</option>
-        <option data-code="CC" value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
-        <option data-code="CO" value="Colombia">Colombia</option>
-        <option data-code="KM" value="Comoros">Comoros</option>
-        <option data-code="CG" value="Congo">Congo - Brazzaville</option>
-        <option data-code="CD" value="Congo, The Democratic Republic Of The">Congo - Kinshasa</option>
-        <option data-code="CK" value="Cook Islands">Cook Islands</option>
-        <option data-code="CR" value="Costa Rica">Costa Rica</option>
-        <option data-code="HR" value="Croatia">Croatia</option>
-        <option data-code="CU" value="Cuba">Cuba</option>
-        <option data-code="CW" value="Curaçao">Curaçao</option>
-        <option data-code="CY" value="Cyprus">Cyprus</option>
-        <option data-code="CZ" value="Czech Republic">Czech Republic</option>
-        <option data-code="CI" value="Côte d&#39;Ivoire">Côte d’Ivoire</option>
-        <option data-code="DK" value="Denmark">Denmark</option>
-        <option data-code="DJ" value="Djibouti">Djibouti</option>
-        <option data-code="DM" value="Dominica">Dominica</option>
-        <option data-code="DO" value="Dominican Republic">Dominican Republic</option>
-        <option data-code="EC" value="Ecuador">Ecuador</option>
-        <option data-code="EG" value="Egypt">Egypt</option>
-        <option data-code="SV" value="El Salvador">El Salvador</option>
-        <option data-code="GQ" value="Equatorial Guinea">Equatorial Guinea</option>
-        <option data-code="ER" value="Eritrea">Eritrea</option>
-        <option data-code="EE" value="Estonia">Estonia</option>
-        <option data-code="ET" value="Ethiopia">Ethiopia</option>
-        <option data-code="FK" value="Falkland Islands (Malvinas)">Falkland Islands</option>
-        <option data-code="FO" value="Faroe Islands">Faroe Islands</option>
-        <option data-code="FJ" value="Fiji">Fiji</option>
-        <option data-code="FI" value="Finland">Finland</option>
-        <option data-code="FR" value="France">France</option>
-        <option data-code="GF" value="French Guiana">French Guiana</option>
-        <option data-code="PF" value="French Polynesia">French Polynesia</option>
-        <option data-code="TF" value="French Southern Territories">French Southern Territories</option>
-        <option data-code="GA" value="Gabon">Gabon</option>
-        <option data-code="GM" value="Gambia">Gambia</option>
-        <option data-code="GE" value="Georgia">Georgia</option>
-        <option data-code="DE" value="Germany">Germany</option>
-        <option data-code="GH" value="Ghana">Ghana</option>
-        <option data-code="GI" value="Gibraltar">Gibraltar</option>
-        <option data-code="GR" value="Greece">Greece</option>
-        <option data-code="GL" value="Greenland">Greenland</option>
-        <option data-code="GD" value="Grenada">Grenada</option>
-        <option data-code="GP" value="Guadeloupe">Guadeloupe</option>
-        <option data-code="GT" value="Guatemala">Guatemala</option>
-        <option data-code="GG" value="Guernsey">Guernsey</option>
-        <option data-code="GN" value="Guinea">Guinea</option>
-        <option data-code="GW" value="Guinea Bissau">Guinea-Bissau</option>
-        <option data-code="GY" value="Guyana">Guyana</option>
-        <option data-code="HT" value="Haiti">Haiti</option>
-        <option data-code="HM" value="Heard Island And Mcdonald Islands">Heard &amp; McDonald Islands</option>
-        <option data-code="HN" value="Honduras">Honduras</option>
-        <option data-code="HK" value="Hong Kong">Hong Kong SAR China</option>
-        <option data-code="HU" value="Hungary">Hungary</option>
-        <option data-code="IS" value="Iceland">Iceland</option>
-        <option data-code="IN" value="India">India</option>
-        <option data-code="ID" value="Indonesia">Indonesia</option>
-        <option data-code="IR" value="Iran, Islamic Republic Of">Iran</option>
-        <option data-code="IQ" value="Iraq">Iraq</option>
-        <option data-code="IE" value="Ireland">Ireland</option>
-        <option data-code="IM" value="Isle Of Man">Isle of Man</option>
-        <option data-code="IL" value="Israel">Israel</option>
-        <option data-code="IT" value="Italy">Italy</option>
-        <option data-code="JM" value="Jamaica">Jamaica</option>
-        <option data-code="JP" value="Japan">Japan</option>
-        <option data-code="JE" value="Jersey">Jersey</option>
-        <option data-code="JO" value="Jordan">Jordan</option>
-        <option data-code="KZ" value="Kazakhstan">Kazakhstan</option>
-        <option data-code="KE" value="Kenya">Kenya</option>
-        <option data-code="KI" value="Kiribati">Kiribati</option>
-        <option data-code="XK" value="Kosovo">Kosovo</option>
-        <option data-code="KW" value="Kuwait">Kuwait</option>
-        <option data-code="KG" value="Kyrgyzstan">Kyrgyzstan</option>
-        <option data-code="LA" value="Lao People&#39;s Democratic Republic">Laos</option>
-        <option data-code="LV" value="Latvia">Latvia</option>
-        <option data-code="LB" value="Lebanon">Lebanon</option>
-        <option data-code="LS" value="Lesotho">Lesotho</option>
-        <option data-code="LR" value="Liberia">Liberia</option>
-        <option data-code="LY" value="Libyan Arab Jamahiriya">Libya</option>
-        <option data-code="LI" value="Liechtenstein">Liechtenstein</option>
-        <option data-code="LT" value="Lithuania">Lithuania</option>
-        <option data-code="LU" value="Luxembourg">Luxembourg</option>
-        <option data-code="MO" value="Macao">Macau SAR China</option>
-        <option data-code="MK" value="Macedonia, Republic Of">Macedonia</option>
-        <option data-code="MG" value="Madagascar">Madagascar</option>
-        <option data-code="MW" value="Malawi">Malawi</option>
-        <option data-code="MY" value="Malaysia">Malaysia</option>
-        <option data-code="MV" value="Maldives">Maldives</option>
-        <option data-code="ML" value="Mali">Mali</option>
-        <option data-code="MT" value="Malta">Malta</option>
-        <option data-code="MQ" value="Martinique">Martinique</option>
-        <option data-code="MR" value="Mauritania">Mauritania</option>
-        <option data-code="MU" value="Mauritius">Mauritius</option>
-        <option data-code="YT" value="Mayotte">Mayotte</option>
-        <option data-code="MX" value="Mexico">Mexico</option>
-        <option data-code="MD" value="Moldova, Republic of">Moldova</option>
-        <option data-code="MC" value="Monaco">Monaco</option>
-        <option data-code="MN" value="Mongolia">Mongolia</option>
-        <option data-code="ME" value="Montenegro">Montenegro</option>
-        <option data-code="MS" value="Montserrat">Montserrat</option>
-        <option data-code="MA" value="Morocco">Morocco</option>
-        <option data-code="MZ" value="Mozambique">Mozambique</option>
-        <option data-code="MM" value="Myanmar">Myanmar (Burma)</option>
-        <option data-code="NA" value="Namibia">Namibia</option>
-        <option data-code="NR" value="Nauru">Nauru</option>
-        <option data-code="NP" value="Nepal">Nepal</option>
-        <option data-code="NL" value="Netherlands">Netherlands</option>
-        <option data-code="AN" value="Netherlands Antilles">Netherlands Antilles</option>
-        <option data-code="NC" value="New Caledonia">New Caledonia</option>
-        <option data-code="NZ" value="New Zealand">New Zealand</option>
-        <option data-code="NI" value="Nicaragua">Nicaragua</option>
-        <option data-code="NE" value="Niger">Niger</option>
-        <option data-code="NG" value="Nigeria">Nigeria</option>
-        <option data-code="NU" value="Niue">Niue</option>
-        <option data-code="NF" value="Norfolk Island">Norfolk Island</option>
-        <option data-code="KP" value="Korea, Democratic People&#39;s Republic Of">North Korea</option>
-        <option data-code="NO" value="Norway">Norway</option>
-        <option data-code="OM" value="Oman">Oman</option>
-        <option data-code="PK" value="Pakistan">Pakistan</option>
-        <option data-code="PS" value="Palestinian Territory, Occupied">Palestinian Territories</option>
-        <option data-code="PA" value="Panama">Panama</option>
-        <option data-code="PG" value="Papua New Guinea">Papua New Guinea</option>
-        <option data-code="PY" value="Paraguay">Paraguay</option>
-        <option data-code="PE" value="Peru">Peru</option>
-        <option data-code="PH" value="Philippines">Philippines</option>
-        <option data-code="PN" value="Pitcairn">Pitcairn Islands</option>
-        <option data-code="PL" value="Poland">Poland</option>
-        <option data-code="PT" value="Portugal">Portugal</option>
-        <option data-code="QA" value="Qatar">Qatar</option>
-        <option data-code="RE" value="Reunion">Réunion</option>
-        <option data-code="RO" value="Romania">Romania</option>
-        <option data-code="RU" value="Russia">Russia</option>
-        <option data-code="RW" value="Rwanda">Rwanda</option>
-        <option data-code="WS" value="Samoa">Samoa</option>
-        <option data-code="SM" value="San Marino">San Marino</option>
-        <option data-code="ST" value="Sao Tome And Principe">São Tomé &amp; Príncipe</option>
-        <option data-code="SA" value="Saudi Arabia">Saudi Arabia</option>
-        <option data-code="SN" value="Senegal">Senegal</option>
-        <option data-code="RS" value="Serbia">Serbia</option>
-        <option data-code="SC" value="Seychelles">Seychelles</option>
-        <option data-code="SL" value="Sierra Leone">Sierra Leone</option>
-        <option data-code="SG" value="Singapore">Singapore</option>
-        <option data-code="SX" value="Sint Maarten">Sint Marteen</option>
-        <option data-code="SK" value="Slovakia">Slovakia</option>
-        <option data-code="SI" value="Slovenia">Slovenia</option>
-        <option data-code="SB" value="Solomon Islands">Solomon Islands</option>
-        <option data-code="SO" value="Somalia">Somalia</option>
-        <option data-code="ZA" value="South Africa">South Africa</option>
-        <option data-code="GS" value="South Georgia And The South Sandwich Islands">South Georgia &amp; South Sandwich Islands</option>
-        <option data-code="KR" value="South Korea">South Korea</option>
-        <option data-code="SS" value="South Sudan">South Sudan</option>
-        <option data-code="ES" value="Spain">Spain</option>
-        <option data-code="LK" value="Sri Lanka">Sri Lanka</option>
-        <option data-code="BL" value="Saint Barthélemy">St. Barthélemy</option>
-        <option data-code="SH" value="Saint Helena">St. Helena</option>
-        <option data-code="KN" value="Saint Kitts And Nevis">St. Kitts &amp; Nevis</option>
-        <option data-code="LC" value="Saint Lucia">St. Lucia</option>
-        <option data-code="MF" value="Saint Martin">St. Martin</option>
-        <option data-code="PM" value="Saint Pierre And Miquelon">St. Pierre &amp; Miquelon</option>
-        <option data-code="VC" value="St. Vincent">St. Vincent &amp; Grenadines</option>
-        <option data-code="SD" value="Sudan">Sudan</option>
-        <option data-code="SR" value="Suriname">Suriname</option>
-        <option data-code="SJ" value="Svalbard And Jan Mayen">Svalbard &amp; Jan Mayen</option>
-        <option data-code="SZ" value="Swaziland">Swaziland</option>
-        <option data-code="SE" value="Sweden">Sweden</option>
-        <option data-code="CH" value="Switzerland">Switzerland</option>
-        <option data-code="SY" value="Syria">Syria</option>
-        <option data-code="TW" value="Taiwan">Taiwan</option>
-        <option data-code="TJ" value="Tajikistan">Tajikistan</option>
-        <option data-code="TZ" value="Tanzania, United Republic Of">Tanzania</option>
-        <option data-code="TH" value="Thailand">Thailand</option>
-        <option data-code="TL" value="Timor Leste">Timor-Leste</option>
-        <option data-code="TG" value="Togo">Togo</option>
-        <option data-code="TK" value="Tokelau">Tokelau</option>
-        <option data-code="TO" value="Tonga">Tonga</option>
-        <option data-code="TT" value="Trinidad and Tobago">Trinidad &amp; Tobago</option>
-        <option data-code="TN" value="Tunisia">Tunisia</option>
-        <option data-code="TR" value="Turkey">Turkey</option>
-        <option data-code="TM" value="Turkmenistan">Turkmenistan</option>
-        <option data-code="TC" value="Turks and Caicos Islands">Turks &amp; Caicos Islands</option>
-        <option data-code="TV" value="Tuvalu">Tuvalu</option>
-        <option data-code="UM" value="United States Minor Outlying Islands">U.S. Outlying Islands</option>
-        <option data-code="UG" value="Uganda">Uganda</option>
-        <option data-code="UA" value="Ukraine">Ukraine</option>
-        <option data-code="AE" value="United Arab Emirates">United Arab Emirates</option>
-        <option data-code="GB" value="United Kingdom">United Kingdom</option>
-        <option data-code="US" value="United States">United States</option>
-        <option data-code="UY" value="Uruguay">Uruguay</option>
-        <option data-code="UZ" value="Uzbekistan">Uzbekistan</option>
-        <option data-code="VU" value="Vanuatu">Vanuatu</option>
-        <option data-code="VA" value="Holy See (Vatican City State)">Vatican City</option>
-        <option data-code="VE" value="Venezuela">Venezuela</option>
-        <option data-code="VN" value="Vietnam">Vietnam</option>
-        <option data-code="WF" value="Wallis And Futuna">Wallis &amp; Futuna</option>
-        <option data-code="EH" value="Western Sahara">Western Sahara</option>
-        <option data-code="YE" value="Yemen">Yemen</option>
-        <option data-code="ZM" value="Zambia">Zambia</option>
-        <option data-code="ZW" value="Zimbabwe">Zimbabwe</option></select>
-      </div>
-    </div>
-    <div class="field--three-eights field field--required">
-      <div class="field__input-wrapper field__input-wrapper--select">
-        <input placeholder="British Columbia" class="field__input" type="text"id="checkout_shipping_address_province1">
-      </div>
-    </div>
-    <div class="field--quarter field field--required">
-
-      <div class="field__input-wrapper">
-        <input placeholder="V4J 4J1" class="field__input field__input--zip" size="30" type="text" id="checkout_shipping_address_zip">
-      </div>
-    </div>
-    <div data-address-field="phone" class="field field--required">
-      <div class="field__input-wrapper">
-        <input placeholder="Phone" class="field__input field__input--numeric"  size="30" type="tel" id="checkout_shipping_address_phone">
-      </div>
-    </div>
-  </div> 
-</div> 
-</div> 
-
-<div class="section">
-  <div class="section__content">
-    <div class="fieldset">
-      <div class="field field--required">
-
-        <div id="g-recaptcha" class="g-recaptcha"></div>
-      </div>    </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-</section>
-
-
-<!--CHECK out cart -->
-<section class="element">
-  <h3>Checkout Cart</h3>
-  <div class="bag-whole">
-    <table class="bag-items">
-      <thead>
-        <tr><td colspan="2">Product</td><td>Size</td><td>Quantity</td><td colspan="2">Price</td></tr>
-      </thead>
-
-      <tbody>
-
-        <tr>
-          <td class="bag-thumbnail"><a href="http://www.neriandhu.com/en/works/products"><img class="bag-item-image" src="img/pro5.jpg" alt="Minimal-Mirror"></a></td>
-          <td class="bag-product-name"><a href="">ClassiCon - Sedan Dining Chair</a> </td>
-
-          <td class="bag-product-size">L</td>
-          <td class="bag-product-quantity">
-
-            <!-- adding and decreasing -->
-            <div class="quantity-input">
-              <a href="javascript:void(0)" class="qty-deincrement">&#8722;</a>
-              <input type="text" name="updates[]" id="updates_12699545501767" value="1" class="quantity-number">
-              <a href="javascript:void(0)" class="qty-increment">+</a>
-            </div>
-          </td>
-
-          <td class="bag-product-price">$452.00</td>
-          <td class="bag-remove">
-
-          </a>
-        </td>
-      </tr>
-
-    </tbody>
-  </table>
-  <div class="bag-additinal">
-    <div class="bag-subtotal-wrapper">
-      <div>
-        <h4>Subtotal</h4>
-        <span class="subtotal">$312.00</span>
-        <input type="submit" class="button button-secondary" value="Update">
-      </div>
+    <nav id="gnav" class="global_nav">
+      <ul class="global-nav-list">
+        <li><a id="cav" onmouseover="over();" onmouseout="out();" href="products.html">neri & hu | 如恩設計</a></li>    
+        <li><a id="con">immersion | 浴缸</a></li>
+        <li><a id="hm">lema | 白露椅</a></li>
+        <li><a id="tnf">parachilna | 燈籠家族</a></li>
+        <li><a id="ud">artemide | 衍生系列</a></li>
+        <li><a id="vv">viabizzuno | 裝飾燈泡</a></li>
+      </ul>
+    </nav>
+    <div id="cursor" style="left: 1050px; top: 236px; display: none;">
+      <img id="brand_1" src="img/pro4.jpg" alt="img">
     </div>
 
 
-    <input type="submit" name="checkout" class="button-check-out" value="Check Out">
-  </div>
-</div>
-
-</section>
-
-</section>
-<!-- // COMBINED ELEMENTS SECTION -->
-
-
-<section id="citations">
-  <h2>Citations</h2>
-
-  <ul>
-    <li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a></li>
-    <li>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="http://www.sfu.ca/~xiangyix/339p11/#">URL</a>.</li>
-  </ul>
-
-</section>
+  </header>
 
 
 
 
 
+  <script type="text/javascript" src="js/js7.js"></script>
+
+  <script type="text/javascript" src="js/js.js"></script>
+  <script src="js/jquery.min(1).js"></script>
+<script src="js/cursor.js"></script>
 
 
-<section id="idea2">
-  <h1>靈感: Minimal design studio  | 極簡主義</h1>
-
-  <section class="element">
-   <h3>Typography</h3>
-
-   <div class = "first">
-    <h2>Primary Typeface for Neri & Hu:</h2>
-    <br>
-    <h3>Neri & Hu  primary Typeface : Raleway</h3>
-    <h3>ABCDEFGHIJKLMNOPQRSTUVWXYZ  ABCDEFGHIJKLMNOPQRSTUVWXYZ  ABCDEFGHIJKLMNOPQRSTUVWXYZ</h3>
-    <h3>abcdefghijklmnopqrstuvwxyz  abcdefghijklmnopqrstuvwxyz  abcdefghijklmnopqrstuvwxyz</h3>
-    <h3>0123456789  0123456789  0123456789  0123456789  0123456789</h3>
-    <h3>Neri & Hu  Neri & Hu  Neri & Hu  Neri & Hu  Neri & Hu  Neri & Hu</h3>
-    <h3>Neri & Hu  Neri & Hu  Neri & Hu  Neri & Hu  Neri & Hu</h3>
-    <h3>Neri & Hu  Neri & Hu  Neri & Hu  Neri & Hu</h3>
-    <h3>Neri & Hu  Neri & Hu  Neri & Hu</h3>
-    <h3>Neri & Hu  Neri & Hu</h3>
-    <h3>Neri & Hu</h3>
-
-  </div>
-</section>
-
-<!--color pallet -->
-<section class="element">
-
- <h3>Colour palettes </h3>
- <div class=" color-pattern2-1">
-  <p>F0F3F6</p>
-</div>
-
-<div class=" color-pattern2-2">
-  <p>C49E7B</p>
-</div>
-
-<div class=" color-pattern2-3">
-  <p>97918E</p>
-</div>
-<div class=" color-pattern2-4">
-  <p>33473F</p>
-</div>
-
-</section>
-
-
-<section class="element">
-  <h3> Art direction </h3>
-  <div class="ad1">
-    <img src="img/src.png" alt="ad1">
-    <img src="img/src2.png" alt="ad2"
-  </div>
-</section>
-
-<section class="element">
-  <h3>About neri & hu</h3>
-  <p>Founded in 2004 by partners Lyndon Neri and Rossana Hu, Neri&Hu Design and Research Office is an inter-disciplinary architectural design practice based in Shanghai, China with an additional office in London, UK. Neri&Hu works internationally providing architecture, interior, master planning, graphic, and product design services. Currently working on projects in many countries, Neri&Hu is composed of multi-cultural staff who speak over 30 different languages. The diversity of the team reinforces a core vision for the practice: to respond to a global worldview incorporating overlapping design disciplines for a new paradigm in architecture.</p>
-
-  <p>Neri&Hu’s location is purposeful. With shanghai considered a new global frontier, Neri&Hu is in the center of this contemporary chaos. The city’s cultural, urban, and historic contexts function as a point of departure for the architectural explorations involved in every project. Because new sets of contemporary problems relating to buildings now extend beyond traditional architecture, the practice challenges traditional boundaries of architecture to include other complementary disciplines.</p>
-
-  <p>Neri&Hu believes strongly in research as a design tool, as each project bears its unique set of contextual issues. A critical probing into the specificities of program, site, function, and history is essential to the creation of rigorous design work. Based on research, Neri&Hu desires to anchor its work on the dynamic interaction of experience, detail, material, form, and light rather than conforming to a formulaic style. The ultimate significance behind each project comes from how the built forms create meaning through their physical representations.</p>
-
-  <p>Neri&Hu has been featured widely by the press around the world, including Architectural Review, Wallpaper*, Architectural Record, FRAME, MARK, Abitare, area, Diseño Interior, Interior Design, I.D., Travel+Leisure, MARU, Perspective Magazine, ELLE Décor Italia, ELLE Deco China, Vogue China, Red Dot Year Book, Dezeen.com, Archidaily.com and countless more print and online media, as well as TV programs. Neri&Hu and their design have been recognized by a number of prestigious international design awards. Neri&Hu are named Maison&Objet Asia Designers of The Year 2015. UK Wallpaper* announced the Founding Partners Lyndon Neri and Rossana Hu as 2014 Designers of The Year. They were inducted into U.S. Interior Design Hall of Fame in 2013. They were selected as one of the I. D. Magazine I.D. Forty and one of the 40 under 40 prominent designers shaping Hong Kong and Greater China respectively. Neri&Hu’s design has been awarded by INSIDE Festival, AR House Awards, AR Awards for Emerging Architecture, World Architecture Festival, D&AD Awards, Design Vanguard, Interior Design Magazine Best of Year Awards and Gold Key Awards, Chicago Athenaeum Good Design awards, I.D. Magazine Annual Design Review, Red Dot Awards, Contractworld Awards, The Great Indoors Awards, Design For Asia Awards, Perspective Awards, Taiwan Interior Design Awards, etc.</p>
-
-
-
-  <p> 由郭锡恩先生和胡如珊女士于2004年共同创立的如恩设计研究室（Neri&Hu），是一家立足于中国上海，在英国伦敦设有分办公室的多元化建筑设计研究室。如恩设计提供国际化的建筑、室内、整体规划、平面以及产品设计服务。公司目前的项目分布在很多不同的国家，拥有来自全世界各地的员工，使用超过30种语言。不同文化背景组成了如恩的设计团队，正是团队的差异独特性增强了我们的设计理念：以全球化的观念结合多元、重叠的设计理念来创造一个新的建筑范例 </p>
-
-  <p>公司地点选择在上海有其独特原因。上海是一个走在世界前沿的城市，Neri&Hu就处在这个多种元素并存的中心，融入了上海的文化、城市和历史背景并将其作为开拓建筑设计的一个出发点。目前与建筑相关的课题正趋于超出传统设计的界限，如恩设计研究室则用其他补充方式对建筑的传统分界提出挑战并进行诠释。</p>
-
-  <p>Neri&Hu始终认为研究是设计的一种有力工具，因为每个项目都具备有其特有的背景。对规划运作、地点、功能和历史等进行细致深入的研究是创造严谨作品不可或缺的要素。在研究的基础上，Neri&Hu致力于建筑与经验、细节、材料、形状及灯光的积极互动，而不是单纯地遵照模式化刻板风格。每个项目背后的最终成功之处都是通过建筑本身外观形象所体现出来的意义而得到淋漓尽致的体现。</p>
-
-  <p>如恩设计研究室（Neri&Hu）赢得了世界范围内的媒体关注，包括英国建筑评论杂志（Architectural Review）和墙纸杂志(Wallpaper*)，美国建筑实录杂志(Architectural Record)，荷兰的FRAME杂志和MARK杂志，意大利的住杂志 (Abitare)和域杂志(area)，西班牙室内建筑杂志(Diseño Interior)，美国室内建筑杂志(Interior Design)，I.D.杂志，旅游休闲杂志(Travel + Leisure)，韩国MARU杂志，香港透视杂志，意大利家居廊杂志，中国家居廊杂志，时尚杂志(VOGUE)，德国红点年鉴 (Red Dot)，Dezeen.com, Archidaily.com等众多世界知名印刷、网络以及电视媒体广泛报道。如恩设计研究室（Neri&Hu）也在世界各地权威设计大奖中屡获殊荣。郭锡恩先生和胡如珊女士2015年被巴黎家居装饰博览会评选为亚洲年度设计师， 2014年被英国墙纸杂志(Wallpaper*)评选为年度设计师，2013年入选美国《室内设计》名人堂。郭锡恩先生曾被美国纽约I.D.杂志评选为“全球最值得关注的四十位设计师之一”，胡如珊女士被评为“大中华地区40位40岁以下卓越设计师之一”等。设计作品获得包括巴塞罗那INSIDE 大奖，建筑评论AR House奖（AR House Awards），建筑评论新锐建筑奖（AR Awards for Emerging Architecture），世界建筑节（World Architectural Festival），英国D&AD大奖，美国建筑实录杂志全球十佳“设计先锋”评选(Design Vanguard)，美国室内设计杂志BOY大奖和金钥匙大奖，芝加哥建筑与设计博物馆最佳设计大奖(Good Design Awards)，美国纽约I.D.杂志设计回顾，红点大奖，德国汉诺威Contractworld设计大奖，荷兰The Great Indoors大奖，亚洲最具影响力设计大奖(DFA)，香港透视大奖(Perspective Awards)，台湾室内设计大奖(TID)等。</p>
-  
-
-</section>
-
-
-<section class="element">
-  <h3> Citations </h3>
-
-  <ul class="ciation-list">
-    <li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a></li>
-
-
-    <li>Miedinger, Max. Designer. 1957. <strong>Helvetica [Font]</strong>. Retrieved from <a href="https://www.fonts.com/font/linotype/helvetica?QueryFontType=Web&amp;src=GoogleWebFonts">https://www.fonts.com/font/linotype/helvetica?QueryFontType=Web&amp;src=GoogleWebFonts</a></li>
-    <li>Miedinger, Max. Designer. 1983. <strong>Neue Helvetica [Font]</strong>. Retrieved from <a href="https://www.fonts.com/font/linotype/neue-helvetica">https://www.fonts.com/font/linotype/neue-helvetica</a></li>
-
-  </ul>
-
-</section>
-</section>
-
-
-
-
-<script src="js/jquery.min(1).js"></script>
-<script type="text/javascript" src="js/js.js"></script>
 
 
