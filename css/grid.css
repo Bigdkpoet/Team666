@@ -1,16 +1,45 @@
-
+*/
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 
 .grid {
+  /*
+    If we are working with older Internet Explorer and Android browsers we should include the vendor-prefixed versions of flex. They offer the older browsers to still use their experimental versions of the property. An example of the vendor prefixed version of the code is commented out below
+  */
+  /*
+    display: -webkit-flex;
+    display: -ms-flex;
 
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+  */
+
+  /*
+    By setting the 'display' property to a value of 'flex', we are setting the container to use flexbox for its layout.
+  */
   display: flex;
+
+  /*
+    The 'flex-wrap' property specifies if children of the flexbox must sit on one line, or if they can be wrapped into multiple lines.
+  */
+  /*flex-wrap: wrap;*/
+
+
+
 }
 
 
 }
+
+
+
+
+
+
+
+
 @media (max-width: 76em){
 
 
@@ -19,11 +48,37 @@ font-size: 12px;
 }
 
 
+.about-content{
+
+font-size: 10em;
+
+
+}
+
+/*
+
+.side-nav-a1{
+  font-size: 1em;
+}
+.side-nav-a2{
+  font-size: 1em;
+}
+
+.side-nav-a3{
+  font-size: 1em;
+}
+.side-nav-a4{
+  font-size: 1em;
+}
+.side-nav-a5{
+  font-size: 1em;
+}
+*/
 
 
 .product-image-wrapper img {
-	width: 40vw;
-	height: auto;
+  width: 40vw;
+  height: auto;
 }
 
 }
@@ -99,7 +154,7 @@ font-size: 12px;
 @media (max-width: 68em){
 
 .small-card{
-	width: 50px;
+  width: 50px;
 }
 .product-image-holder img{
  
@@ -108,22 +163,23 @@ font-size: 12px;
 }
 
 
-.details h1{
 
- font-family: "HelveticaNeueLTStd-BdCn" ;
+.details h1{
+width: 100%;
+font-family: 'Raleway', sans-serif;
  font-size: 2rem;
  margin:10px 0;
 
 }
 .details h2{
 
- font-family: "HelveticaNeueLTStd-Cn";
+font-family: 'Raleway', sans-serif;
 margin:10px 0;
 font-size: 1rem;
 }
-.details span{
+.details .details-brand{
   font-size: 2rem;
- font-family: "HelveticaNeueLTStd-BdCn";
+font-family: 'Raleway', sans-serif;
 margin:10px 0;
 color: #a8a8a8;
 }
@@ -133,34 +189,223 @@ color: #a8a8a8;
 
 .details p{
 
- font-family: "HelveticaNeueLTStd-Ltd";
+font-family: 'Raleway', sans-serif;
 margin:10px 0;
-font-size: 0.4rem;
+font-size: 0.7rem;
 }
 
 .details-p{
   border-top: solid 1px #a8a8a8;
-  font-family: "HelveticaNeueLTStd-It";
+font-family: 'Raleway', sans-serif;
   padding-top: 15px;
-  font-weight: 400;
-}
 
 }
 
-@media (max-width: 720px){
+}
+
+
+
+
+
+
+@media (max-width: 64em){
+#side-nav a{
+
+font-size: 1.5em;
+
+}
+
+.form-cart{
+  display: none;
+}
+.form-holder{
+  float: left;
+  width: 100%;
+
+}
+.product-card-name{
+  font-size: 0.9em;
+}
+
+.product-image-wrapper img {
+  width: 19vw;
+  height: auto;
+}
+
+.global-nav-list {
+    position: absolute;
+    /* text-align: center; */
+    margin: 0 auto;
+    padding: 0;
+    top: 20%;
+    width: 80%;
+    right: 0;
+    align-items: center;
+   
+}
+.global-nav-list a {
+  font-size: 2.2rem;
+
+  font-family: 'Raleway', sans-serif;
+}
+
+
+.global-nav-list a::before {
+  /*content: '';
+  display: inline-block;
+  height: 15px;
+  background-color: #33473F;
+
+  position: absolute;
+  top: 50%;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;*/
+}
+
+.global-nav-list a:hover::before {
+  width: 0;
+}
+
+.global-nav-list li {
+  margin-top: 2em;
+}
+
+
+.about-container{
+
+top: 20vh;
+
+}
+.about-img img{
+
+  display: inline-block;
+  width: 50%;
+  
+}
+.img1{
+  position: relative;
+  display: inline-block;
+   left: 10%;
+  
+}
+.img2{
+  top: 50vh;
+   left: 30%;
+  
+}
+
+.img3{
+ top: 100vh;
+   left: 0;
+  
+}
+.img4{
+top: 150vh;
+   left: 40%;
+  
+}
+
+
+}
+
+
+
+@media (max-width: 52em){
+.product-image-wrapper img {
+  width: 25vw;
+  height: auto;
+}
+    .container1-tags-ul img{
+    margin:10px  10px;
+}
+}
+
+
+@media (min-width: 95em){
+.about-content{
+
+font-size: 11em;
+
+
+}
+
+}
+
+
+@media (max-width: 84em){
+.about-content{
+
+font-size: 10em;
+
+
+}
+}
+
+
+
+@media (min-width: 100em){
+.about-content{
+position: relative;
+font-size: 14em;
+
+
+}
+}
+
+
+@media (max-width: 45em){
+.bottom-info{
+
+
+background: white;
+width: 100%;
+height: auto;
+display: none;
+
+
+}
+.info-container1{
+width: 100%;  
+    border-right: none;
+}
+.info-container2{
+width: 100%;
+    border-right: none;
+}
+
+.info-container3{
+width: 100%;
+     
+}
+    
 .description-holder{
-	left: 2%;
-	top: 10%;
+  
+  display: none;
+}
+    
+.mobile-details{
+  display: inline-block;
+  position: relative;
+  width: 95vw;
+  left: 2.5%;
+  right: 2.5%;
 
 }
+
+/*.description-holder{
+  left: 2%;
+  top: 10%;
+
+}*/
 
 .product-image-holder{
-	left: 2%;
-	border-left: none;
-	padding: 0;
+  left: 2%;
+  border-left: none;
+  padding: 0;
 }
 .pre-view-image{
-	display: none;
+  display: none;
 }
 
 .product-image-holder img{
@@ -170,36 +415,41 @@ font-size: 0.4rem;
  height: auto;
 }
 .details{
-	display: inline-block;
+  display: inline-block;
 
-	margin-left: 0;
-	width: 90%;
-	left: 5%;
-	right: 5%;
-	float: left;
-	
+  margin-left: 0;
+  width: 100%;
+
+/*  float: left;*/
+  
 }
 
 .header__menu--extra{
-	display: none;
+  display: none;
 }
 
 .container{
-	display: inline-block;
+  display: inline-block;
 }
 .top_nav{
-	display: none;
+  display: none;
 }
 .me img{
-	width: 20%;
+  width: 20%;
 }
 .global_nav{
-	width: 100%;
-	height: 100%;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+
+
 }
 
-.header {
+.global_nav::-webkit-scrollbar { display: none; !important }
 
+.header {
+    /* position: relative; */
     position: absolute;
     z-index: 100;
     width: 100%;
@@ -210,6 +460,8 @@ font-size: 0.4rem;
 
 .global-nav-list {
     position: absolute;
+     text-align: center; 
+     align-items: center;
     margin: 0 auto;
     padding: 0;
     top: 20%;
@@ -219,22 +471,22 @@ font-size: 0.4rem;
    
 }
 .global-nav-list a {
-  font-size: 4rem;
-  font-weight: 600;
-  font-family: 'HelveticaNeueLTStd-Lt'; 
+
+font-family: 'Raleway', sans-serif;
 }
 
 .form-holder{
-	top: 5%;
+  top: 5%;
 
 }
 
 
 
-#side-nav {
 
-	display: none;
 
+
+#side-nav{
+  display: none;
 }
 
 
@@ -291,48 +543,158 @@ width: 90%;
  
 }
 .top_nav_ul2 li{
-	font-size: 0.3rem;
+  font-size: 0.3rem;
 }
 
 
 .section--shipping-address{
-	width: 100%;
+  width: 100%;
 }
 
+.about-container{
+
+top: 20vh;
+
+}
+.about-content{
+   
+font-size: 7em;
+line-height: 1em;
+
+}
+.product-list{
+width: 95%;
+right: 2.5%;
+left: 2.5%;
+
 }
 
-
-@media (max-width: 510px){
+.fliter2{
+width: 95%;
+right: 2.5%;
+left: 2.5%;
+}
 
 .product-image-wrapper img {
-	width: 80vw;
-	height: auto;
+  width: 43vw;
+  height: auto;
+}
+
+
+.card{
+  padding: 0;
+}
+.card--content{
+  min-width: 400px;
+
+}
+
+
+.about-img{
+display: none;
+}
+
+.about-container{
+  margin-bottom: 200px;
+}
+
+
+
+
+.stores1 {
+
+width: 100%;
+
+margin-bottom: 80px;
+
+
+}
+.stores2 {
+
+width: 100%;
+margin-bottom: 80px;
+
+
+}
+
+.stores3 {
+
+width: 100%;
+
+margin-bottom: 80px;
+
+}
+
+.stores h3{
+
+margin-left: 0px;
+
+}
+
+
+.stores p{
+
+margin-left: 0px;
+
+  
+}
+.stores h4{
+
+margin-left: 0px;
+  
+}
+.about-content{
+   
+font-size: 2em;
+letter-spacing: 0;
+line-height: 1.25em;
+
+
+}
+
+
+
+}
+
+
+
+
+
+@media (max-width: 32em){
+
+.product-image-wrapper img {
+  width: 95%;
+  height: auto;
 }
 
 .global-nav-list {
     position: absolute;
-    /* text-align: center; */
     margin: 0 auto;
     padding: 0;
-    top: 20%;
+    top: 10%;
     width: 80%;
     right: 0;
     left: 0;
-   text-align: left;
+   text-align: center;
 
 }
 .global-nav-list a {
-  font-size: 2rem;
-  font-weight: 600;
-  font-family: 'HelveticaNeueLTStd-Lt'; 
+  font-size: 1.5rem;
+
+ font-family: 'Raleway', sans-serif;
 }
 
-#side-nav{
+.global-nav-list li {
+  margin-top: 2em;
+}
+
+
+.cursor{
   display: none;
 }
 
 
+
+
 }
-
-
 
