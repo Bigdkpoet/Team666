@@ -80,6 +80,9 @@ font-size: 10em;
   width: 40vw;
   height: auto;
 }
+.cursor{
+  display: none;
+}
 
 }
 
@@ -142,6 +145,9 @@ font-size: 10em;
   top:15vh;
 }
 
+.cursor{
+  display: none;
+}
 
 
 
@@ -199,6 +205,9 @@ font-size: 0.7rem;
 font-family: 'Raleway', sans-serif;
   padding-top: 15px;
 
+}
+.cursor{
+  display: none;
 }
 
 }
@@ -305,6 +314,9 @@ top: 150vh;
    left: 40%;
   
 }
+.cursor{
+  display: none;
+}
 
 
 }
@@ -318,6 +330,10 @@ top: 150vh;
 }
     .container1-tags-ul img{
     margin:10px  10px;
+}
+
+.cursor{
+  display: none;
 }
 }
 
@@ -651,7 +667,16 @@ line-height: 1.25em;
 
 
 }
+.cursor{
+  display: none;
+}
 
+
+.product-image-holder img{
+ width: 300px;
+ height: 300px;
+
+}
 
 
 }
