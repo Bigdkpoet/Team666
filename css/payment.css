@@ -1,0 +1,202 @@
+*{
+  cursor: none;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+input:hover{
+  background-color: lightgray;
+  opacity: .5;
+}
+
+.main-wrapper {
+  position: relative;
+  float: left;
+  width: 30%;
+  clear: left;
+  float: left;
+  top: 5em;
+  left: 10%;
+}
+
+.BigImg img{
+
+margin-top: 4rem;
+width: 50%;
+
+
+
+}
+.productList{
+
+  position: relative;
+
+  display: flex;
+  flex-direction: flow;
+  margin-top: 2em;
+  flex-wrap: wrap;
+  justify-content:space-between;
+
+}
+
+.productInfo{
+
+  font-family: 'Raleway', sans-serif;
+
+}
+
+.productInfo h2{
+
+  padding-left: 10px;
+  border-left: 4px solid black;
+}
+
+
+.content {
+
+  display: block;
+  position: relative;
+  float: right;
+  width: 40%;
+  top: 5rem;
+  right: 15%;
+  padding: 3em;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+
+
+.content h2{
+  padding-left: 10px;
+  border-left: 4px solid black;
+  font-size: 2rem;
+  bottom: 2rem;
+ 
+}
+
+.description{
+  max-width: 40em;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+
+}
+
+
+.buttons{
+  font-family: 'Raleway', sans-serif;
+  width: 100%;
+}
+
+.buttonBuy {
+  background-color:lightgray;
+  opacity: .8;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration:none;
+  display: inline-block;
+  font-size: 1rem;
+  margin-top: 1rem;
+  font-family: 'Raleway', sans-serif;
+  transition: all .5s ease-in-out;
+   width: 100%;
+
+}
+
+.buttonBuy:hover{
+  color: white;
+  background-color: #C49E7B;
+   opacity: .4;
+   cursor: none;
+ 
+}
+
+.priceCount {
+
+  margin-top: 2rem;
+  border-top: 1px solid lightgray;
+  float: left;
+  width: 100%;
+
+}
+
+.priceCount h2{
+  font-size: 1.5rem;
+}
+
+
+.radio-button{
+  margin: 10px 10px 10px 0px;
+  padding-left: 100px;
+}
+
+
+
+@media (max-width: 1920px) {
+
+  .content {
+    right: 10%;
+    width: 34%;
+  }
+
+}
+
+@media (max-width: 1709px) {
+  .main-wrapper{
+
+    left: 10%
+  }
+}
+
+@media (max-width: 1707px) {
+  .main-wrapper {
+    left: 25%
+  }
+}
+
+@media (max-width: 1707px) {
+  .main-wrapper {
+    left: 5%;
+    width: 42%;
+    z-index: -1
+  }
+  .content {
+
+    right: 0%;
+    width: 42%;
+  }
+}
+
+@media (max-width: 989px) {
+
+  .main-wrapper {
+   
+    width: 90%;
+
+  }
+  .content{
+    left: 5%;
+    width: 90%;
+  }
+
+  .BigImg {
+    height: 30em;
+    z-index: 
+  }
+}
+
+@media (max-width: 570px) {
+  .main-wrapper .BigImg{
+    width: 100%;
+    height:18em;
+  }
+
+}

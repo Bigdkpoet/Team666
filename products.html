@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products</title>
+  <script src="js/jquery.min.js">
+  </script>
+
+  
+  
+  <link rel="stylesheet" type="text/css" href="css/normal.css">
+  
+  <link rel="stylesheet" type="text/css" href="css/list.css">
+
+  <link rel="stylesheet" type="text/css" href="css/nav.css">
+  
+  <link rel="stylesheet" type="text/css" href="css/bottom.css">
+  <link rel="stylesheet" type="text/css" href="css/cursor.css">
+  <link rel="stylesheet" type="text/css" href="css/grid.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:200&display=swap" rel="stylesheet">
+
+  
+
+  
+
+
+
+
+  <body id="list-body" >
+
+
+
+<!--cursor display-->
+  <div class="cursor"></div>
+
+      
+    <header>
+
+      <div class="header">
+       <div class="nav-container" id="nav-container" style="top: 0px;">
+        <a class="me" href="index.html" id="me">
+          <img src="img/logo.png" alt="logo">
+        </a>
+        <div class="right-nav">
+          <nav class="top_nav" id="top_nav">
+            <ul class="top_nav_ul">
+              <li><a onclick="myFunction1();">brands</a></li>
+              <li><a href="about.html"> about us </a></li>
+              <li><a href="products.html"> products</a></li>
+              <li><a href="#"> showcase</a></li>
+
+
+
+            </ul>
+
+
+
+          </nav>
+
+          <div class="container" onclick="myFunction(this); myFunction1(); ">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <nav id="gnav" class="global_nav">
+      <ul class="global-nav-list">
+     
+        <li><a id="cav" onmouseover="over();" onmouseout="out();" href="products.html">neri & hu | 如恩設計</a></li>    
+      <li><a id="con" href="products.html">immersion | 浴缸</a></li>
+      <li><a id="hm"  href="products.html">lema | 白露椅</a></li>
+      <li><a id="tnf" href="products.html">parachilna | 燈籠家族</a></li>
+      <li><a id="ud"  href="products.html">artemide | 衍生系列</a></li>
+      <li><a id="vv"  href="products.html">viabizzuno | 裝飾燈泡</a></li>
+      </ul>
+    </nav>
+
+    <div id="cursor" style="left: 1131px; top: 259px;">
+      <img id="brand_1" src="img/pro4.jpg" alt="img">
+    </div>
+
+  </header>
+
+
+
+
+  <div class="brand-head">
+    <h1>“We don’t ask to be eternal beings, we only ask that things do not lose all their meaning.” 
+      <br>
+      - Antoine De Saint Exupéry
+      <br>
+    “不求恒久远，但求意未尽”– 安东尼.德.圣埃克苏佩里</h1>
+  </div>
+
+  <div class="fliter-con" id="fliter-con">
+    <div class="fliter" onclick="myFunction10();" id="fliter" style="position: fixed;">
+     <div class="fliter-container" id="fliter-container">
+      <div class="featured" id="featured">
+         <div class="sort"><a>Category</a> </div>
+        <ul>
+          <li><a>architecture | 建築物</a></li>
+          <li><a>interiors | 室內設計</a></li>
+          <li><a>products | 產品設計</a></li>
+          <li><a>graphics | 平面設計</a></li>
+          <li><a>studio | 工作室</a></li>
+        </ul>
+
+      </div>
+    </div>
+   
+  </div>
+</div>
+
+
+<section class="first-look">
+
+
+
+  <div class="first-look1" id="first-look1">
+    <div class="first-content"> 
+      <img src="img/gal1.jpg" alt="cav2" style="transform: scale(1, 1); filter: grayscale(0);">
+    </div>
+
+
+  </div>
+
+
+  <div class="first-look2" id="first-look2">
+    <div class="first-content2">  <img src="img/gal5.jpg" alt="cav4">
+
+      </div>
+    </div>
+
+  </section>
+
+
+
+<!--second look-->
+<section class="second-look">
+
+
+
+  <div class="second-look1" id="second-look1">
+    <div class="second-content"> 
+      <img src="img/gal2.jpg" alt="cav2" style="transform: scale(1, 1); filter: grayscale(0);">
+    </div>
+
+ 
+  </div>
+
+
+  <div class="second-look2" id="second-look2">
+    <div class="second-content2">  <img src="img/gal3.jpg" alt="cav4">
+
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+
+
+
+
+
+    <section class="product-list">
+      <div class="brand-head2">
+        <h1>Inspirations | 靈感</h1>
+      </div>
+
+
+
+
+<!--product 1 -->
+      <div class="product">
+        <div class="product-border">
+          <span>
+            <a href="addbag.html" class="product-card
+            " id="card1">
+        
+
+
+
+            <div class="product-image-wrapper">
+              <img src="img/product2.png" alt="lema chair" class="product-card-image" id="product1">
+
+              <img src="img/product1.png" alt="lema chair" class="product-card-image2" id="product1-2">
+
+
+            </div>
+
+            <div class="product-details-wrapper">
+              <p id="brd2" class="product-card-brand">Lema</p>
+              <p id="sep2" class="product-card-name">Bai Lu chiar | 白露椅</p>
+              <p class="product-price">
+
+                $1270.00 CAD
+
+              </p>
+            </div>
+
+          </a>
+
+        </span>
+      </div>
+    </div> 
+
+<!--product 2 -->
+
+    <div class="product">
+      <div class="product-border">
+        <span>
+          <a href="addbag-2.html" class="product-card" id="card2">
+
+
+          <div class="product-image-wrapper">
+            <img src="img/product3.png" alt="parachilna" class="product-card-image" id="product2">
+
+            <img src="img/product3-2.png" alt="parachilna" class="product-card-image2" id="product2-2">
+
+
+          </div>
+
+          <div class="product-details-wrapper">
+            <p id="brd3" class="product-card-brand">Immersion</p>
+            <p id="sep3" class="product-card-name">Immersion tub| 浴缸</p>
+            <p class="product-price">
+
+              $735.00 CAD
+
+            </p>
+          </div>
+
+        </a>
+
+      </span>
+    </div>
+  </div> 
+
+
+
+
+<!--product 3 -->
+  <div class="product">
+    <div class="product-border">
+      <span>
+        <a href="#" class="product-card
+        " id="card3">
+
+
+        <div class="product-image-wrapper">
+          <img src="img/product4-2.png" alt="lema" class="product-card-image" id="product3">
+
+          <img src="img/product4.png" alt="lema" class="product-card-image2" id="product3-2">
+
+
+        </div>
+
+        <div class="product-details-wrapper">
+          <p id="brd4" class="product-card-brand">Artemide</p>
+          <p id="sep4" class="product-card-name">Artemide - nh1217 Extention| 衍生系列</p>
+          <p class="product-price">
+
+            $620.00 CAD
+
+          </p>
+        </div>
+
+      </a>
+
+    </span>
+  </div>
+</div> 
+
+
+<!--product 4 -->
+<div class="product">
+  <div class="product-border">
+    <span>
+      <a href="#" class="product-card
+      " id="card4">
+
+
+
+
+      <div class="product-image-wrapper">
+        <img src="img/product5-2.png" alt="lema" class="product-card-image" id="product4">
+
+        <img src="img/product5.png" alt="lema" class="product-card-image2" id="product4-2">
+
+
+      </div>
+
+      <div class="product-details-wrapper">
+        <p id="brd4" class="product-card-brand">Capo</p>
+        <p id="sep4" class="product-card-name">Capo - De La Chair| Capo 系列</p>
+        <p class="product-price">
+
+          $605.00 CAD
+
+        </p>
+      </div>
+
+    </a>
+
+  </span>
+</div>
+</div> 
+
+
+<!--product 5 -->
+<div class="product">
+  <div class="product-border">
+    <span>
+      <a href="#" class="product-card
+      " id="card5">
+
+
+      <div class="product-image-wrapper">
+        <img src="img/product6.png" alt="lema" class="product-card-image" id="product5">
+
+        <img src="img/product6-2.png" alt="lema" class="product-card-image2" id="product5-2">
+
+
+      </div>
+
+      <div class="product-details-wrapper">
+        <p id="brd5" class="product-card-brand">Capo</p>
+        <p id="sep5" class="product-card-name">Capo - De La Lounge| Capo 系列</p>
+        <p class="product-price">
+
+          $430.00 CAD
+
+        </p>
+      </div>
+
+    </a>
+
+  </span>
+</div>
+</div> 
+
+
+<!--product 6 -->
+<div class="product">
+  <div class="product-border">
+    <span>
+      <a href="#" class="product-card
+      " id="card6">
+
+
+      <div class="product-image-wrapper">
+        <img src="img/product7.png" alt="lema" class="product-card-image" id="product6">
+
+        <img src="img/product7-2.png" alt="lema" class="product-card-image2" id="product6-2">
+
+
+      </div>
+
+      <div class="product-details-wrapper">
+        <p id="brd6" class="product-card-brand">Parachilna</p>
+        <p id="sep6" class="product-card-name">Parachilna - Denglong | "灯笼家族" 吊燈</p>
+        <p class="product-price">
+
+          $410.00 CAD
+
+        </p>
+      </div>
+
+    </a>
+
+  </span>
+</div>
+</div> 
+
+
+<!--product 7 -->
+<div class="product">
+  <div class="product-border">
+    <span>
+      <a href="#" class="product-card
+      " id="card7">
+
+      <div class="product-image-wrapper">
+        <img src="img/product8.png" alt="lema" class="product-card-image" id="product7">
+
+        <img src="img/product8-2.png" alt="lema" class="product-card-image2" id="product7-2">
+
+
+      </div>
+
+      <div class="product-details-wrapper">
+        <p id="brd7" class="product-card-brand">Eames</p>
+        <p id="sep7" class="product-card-name">Eames Elephant | Eames大象</p>
+        <p class="product-price">
+
+          $375.00 CAD
+
+        </p>
+      </div>
+
+    </a>
+
+  </span>
+</div>
+</div> 
+
+
+
+<!--product 8 -->
+<div class="product">
+  <div class="product-border">
+    <span>
+      <a href="#" class="product-card
+      " id="card8">
+
+
+
+      <div class="product-image-wrapper">
+        <img src="img/product9.png" alt="lema" class="product-card-image" id="product8">
+
+        <img src="img/product9-2.png" alt="lema" class="product-card-image2" id="product8-2">
+
+
+      </div>
+
+      <div class="product-details-wrapper">
+        <p id="brd8" class="product-card-brand">Parachilna</p>
+        <p id="sep8" class="product-card-name">Parachilna - Bai Family | “白家族”系列吊灯</p>
+        <p class="product-price">
+
+          $260.00 CAD
+
+        </p>
+      </div>
+
+    </a>
+
+  </span>
+</div>
+</div> 
+
+<!--product 9 -->
+
+<div class="product">
+  <div class="product-border">
+    <span>
+      <a href="#" class="product-card
+      " id="card9">
+
+
+
+      <div class="product-image-wrapper">
+        <img src="img/product10.png" alt="lema" class="product-card-image" id="product9">
+
+        <img src="img/product10-2.png" alt="lema" class="product-card-image2" id="product9-2">
+
+
+      </div>
+
+      <div class="product-details-wrapper">
+        <p id="brd8" class="product-card-brand">Poltrona </p>
+        <p id="sep8" class="product-card-name">Poltrona Frau - Zhuang Box | 妝</p>
+        <p class="product-price">
+
+          $260.00 CAD
+
+        </p>
+      </div>
+
+    </a>
+
+  </span>
+</div>
+</div>
+
+
+
+
+<!-- container div -->
+</section>
+
+
+
+<div class="bottom-info">
+
+
+
+</div>
+
+<footer>
+  <div class="bottom-info" id="bottom-info">
+   <div class="info-container1">
+    <div class="container1-content"> 
+      <h3>ALL LINKS</h3> 
+      <nav class="container1-tags"> 
+        <ul class="container1-tags-ul">
+          <li>
+            <a href="about.html">ABOUT US
+            </a></li>
+            <li> <a href="http://www.sfu.ca/~ggc1/IAT339/IAT339_P02/"> STYLEGUIDE
+            </a></li>
+            <li> <a href="citation.html">CITATION
+            </a></li>
+            <li><a>POLICY
+            </a></li>
+            <li> <a>SHIPPING
+            </a></li>
+
+            <li><a>FAQ
+            </a> </li>
+          </ul>
+        </nav>
+      </div>
+      
+    </div>
+    <div class="info-container2">
+     <div class="container1-content"> 
+      <h3>FOLLOW US</h3> 
+      <nav class="container1-tags"> 
+        <ul class="container1-tags-ul">
+          <li>
+            <img src="img/facebook.png" alt="icon1"></li>
+            <li> <img src="img/twitter.png" alt="icon2"></li>
+            <li> <img src="img/weixing-filled.png" alt="icon3"></li>
+
+
+          </ul>
+        </nav>
+      </div>
+      
+    </div>
+    <div class="info-container3">
+     <div class="container1-content"> 
+      <h3>NEWSLETTER</h3> 
+      <div>
+        <input type="text" placeholder="Enter your email" class="newsletter-input">
+      </div>
+    </div>
+
+  </div>
+
+</div>
+</footer>
+
+
+
+<script type="text/javascript" src="js/js7.js"></script>
+<script src="js/jquery.min(1).js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<script  src="js/cursor.js"></script>
+
+
+
+
